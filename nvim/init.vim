@@ -15,12 +15,15 @@ endfunction
 " -------------
 "  vim標準の設定
 call s:source_rc('default.vim')
+call s:source_rc('mapping.vim')
 
 " -------------
 "  PlugIn設定
 call plug#begin('~/.vim/plugged')
 
 call s:source_rc('plugin/fzf.vim')
+call s:source_rc('plugin/vim-lsp.vim')
+call s:source_rc('plugin/trace.vim')
 
 call plug#end()
 
