@@ -16,6 +16,7 @@ endfunction
 "  vim標準の設定
 call s:source_rc('default.vim')
 call s:source_rc('mapping.vim')
+call s:source_rc('smooth_scroll.vim')
 
 " -------------
 "  PlugIn設定
@@ -24,6 +25,9 @@ call plug#begin('~/.vim/plugged')
 call s:source_rc('plugin/fzf.vim')
 call s:source_rc('plugin/vim-lsp.vim')
 call s:source_rc('plugin/trace.vim')
+call s:source_rc('plugin/molokai.vim')
 
 call plug#end()
+" -------------
+"
 
