@@ -23,7 +23,8 @@ endif
 
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
-    setlocal signcolumn=yes
+    " 左に白い空白を入れる
+    " setlocal signcolumn=yes
     if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
     nmap <buffer> gd <plug>(lsp-definition)
     nmap <buffer> gs <plug>(lsp-document-symbol-search)
@@ -49,3 +50,4 @@ augroup lsp_install
     " call s:on_lsp_buffer_enabled only for languages that has the server registered.
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
+
