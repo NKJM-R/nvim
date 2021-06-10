@@ -1,6 +1,8 @@
 " s¬etting
 "文字コードをUFT-8に設定
 set fenc=utf-8
+set encoding=UTF-8
+
 " バックアップファイルを作らない
 set nobackup
 " スワップファイルを作らない
@@ -36,12 +38,13 @@ set wildmode=list:longest
 nnoremap j gj
 nnoremap k gk
 " シンタックスハイライトの有効化
-syntax enable
+" syntax enable
 
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
-set list listchars=tab:\▸\-
+set list
+set listchars=tab:»-,eol:↲,extends:»,precedes:«,space:.
 " Tab文字を半角スペースにする
 set expandtab
 " 行頭以外のTab文字の表示幅（スペースいくつ分）
