@@ -38,6 +38,10 @@ call s:source_rc('plugin/vim-airline.vim')
 call s:source_rc('plugin/vim-devicons.vim')
 
 " -------------
+" NeoVim向けPlugIn
+call s:source_rc('plugin/blamer.vim')
+
+" -------------
 " カラースキーム系
 "
 
