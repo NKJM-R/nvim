@@ -16,6 +16,12 @@ function! s:source_rc(rc_file_name)
 endfunction
 
 " -------------
+" Leaderキーの割り当て　とりあえずスペースで
+"
+
+let mapleader = "\<Space>"
+
+" -------------
 "  vim標準の設定
 "
 
@@ -36,6 +42,7 @@ call s:source_rc('plugin/vim-sclow.vim')
 call s:source_rc('plugin/scrollbar.vim')
 call s:source_rc('plugin/vim-airline.vim')
 call s:source_rc('plugin/vim-devicons.vim')
+call s:source_rc('plugin/deoplete.vim')
 
 " -------------
 " カラースキーム系
