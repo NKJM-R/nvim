@@ -35,14 +35,15 @@ call s:source_rc('smooth_scroll.vim')
 
 call plug#begin('~/.vim/plugged')
 
+call s:source_rc('plugin/deoplete.vim')
 call s:source_rc('plugin/fzf.vim')
-call s:source_rc('plugin/vim-lsp.vim')
-call s:source_rc('plugin/trace.vim')
-call s:source_rc('plugin/vim-sclow.vim')
 call s:source_rc('plugin/scrollbar.vim')
+call s:source_rc('plugin/trace.vim')
 call s:source_rc('plugin/vim-airline.vim')
 call s:source_rc('plugin/vim-devicons.vim')
-call s:source_rc('plugin/deoplete.vim')
+call s:source_rc('plugin/vim-gitgutter.vim')
+call s:source_rc('plugin/vim-lsp.vim')
+call s:source_rc('plugin/vim-sclow.vim')
 
 " -------------
 " NeoVim向けPlugIn
