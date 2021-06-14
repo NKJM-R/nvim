@@ -24,7 +24,7 @@ endif
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     " 左に白い空白を入れる
-    " setlocal signcolumn=yes
+    setlocal signcolumn=yes
     if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
     nmap <buffer> gd <plug>(lsp-definition)
     nmap <buffer> gs <plug>(lsp-document-symbol-search)
