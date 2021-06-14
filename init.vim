@@ -45,6 +45,10 @@ call s:source_rc('plugin/vim-devicons.vim')
 call s:source_rc('plugin/deoplete.vim')
 
 " -------------
+" NeoVim向けPlugIn
+call s:source_rc('plugin/blamer.vim')
+
+" -------------
 " カラースキーム系
 "
 
