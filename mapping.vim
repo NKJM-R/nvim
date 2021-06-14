@@ -3,6 +3,8 @@
 inoremap <C-b> <Left>
 inoremap <C-d> <C-o>x
 inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>^
 inoremap <C-f> <Right>
-" 
-tnoremap <silent> <ESC> <C-\><C-n>
+
+inoremap <silent> <ESC> <C-\><C-n>
+
