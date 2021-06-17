@@ -16,3 +16,6 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
+" アイコン表示
+let g:webdevicons_enable_nerdtree = 1
+

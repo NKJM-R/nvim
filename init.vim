@@ -8,10 +8,12 @@ endif
 " rcファイル読み込み関数
 "
 
-function! s:source_rc(rc_file_name)
-    let rc_file = expand(g:vim_home . '/' . a:rc_file_name)
+function! s:source_rc(rc_file_name) abort
+    let rc_file = g:vim_home . '/' . a:rc_file_name
     if filereadable(rc_file)
         execute 'source' rc_file
+    else
+        echoerr "読み込めないファイルです: " . rc_file
     endif
 endfunction
 
@@ -37,14 +39,16 @@ call plug#begin('~/.vim/plugged')
 
 call s:source_rc('plugin/deoplete.vim')
 call s:source_rc('plugin/fzf.vim')
+call s:source_rc('plugin/nerdtree-git.vim')
+call s:source_rc('plugin/nerdtree-syntax-highlight.vim')
+call s:source_rc('plugin/nerdtree.vim')
 call s:source_rc('plugin/scrollbar.vim')
-call s:source_rc('plugin/trace.vim')
+call s:source_rc('plugin/traces.vim')
 call s:source_rc('plugin/vim-airline.vim')
 call s:source_rc('plugin/vim-devicons.vim')
 call s:source_rc('plugin/vim-gitgutter.vim')
 call s:source_rc('plugin/vim-lsp.vim')
 call s:source_rc('plugin/vim-sclow.vim')
-call s:source_rc('plugin/nerdtree.vim')
 
 " -------------
 " NeoVim向けPlugIn
@@ -57,6 +61,8 @@ call s:source_rc('plugin/blamer.vim')
 call s:source_rc('plugin/molokai.vim')
 call s:source_rc('plugin/shirotelin.vim')
 
+" -------------
+"  プラグインのインストールはここまで
 call plug#end()
 
 " -------------
@@ -68,6 +74,10 @@ colorscheme shirotelin
 
 " airline-vimのテーマを選択
 let g:airline_theme = 'solarized'
+
+" ------------
+"  起動時の挙動設定
+"
 
 " ファイルが選択されて起動した場合フォルダツリーの場所を移動する
 autocmd StdinReadPre * let s:std_in=1
