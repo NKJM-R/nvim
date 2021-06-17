@@ -8,3 +8,7 @@ inoremap <C-f> <Right>
 
 inoremap <silent> <ESC> <C-\><C-n>
 
+" ノーマルモード時
+nnoremap n nzz
+nnoremap N Nzz
+
