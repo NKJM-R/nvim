@@ -19,3 +19,5 @@ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_
 " アイコン表示
 let g:webdevicons_enable_nerdtree = 1
 
+" 隠しファイルの表示
+let NERDTreeShowHidden = 1
