@@ -14,8 +14,9 @@ nnoremap N Nzz
 nnoremap GG GGzz
 
 " us配列用の設定
-nnoremap ; :
-nnoremap : ;
-vnoremap : :
-vnoremap : ;
+
+nnoremap <Leader>u :source $MYVIMRC<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>Q :q!<CR>
 
