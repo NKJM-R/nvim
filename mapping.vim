@@ -12,3 +12,10 @@ inoremap <silent> <ESC> <C-\><C-n>
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap GG GGzz
+
+" us配列用の設定
+nnoremap ; :
+nnoremap : ;
+vnoremap : :
+vnoremap : ;
+
