@@ -51,6 +51,10 @@ call s:source_rc('plugin/vim-devicons.vim')
 call s:source_rc('plugin/vim-gitgutter.vim')
 call s:source_rc('plugin/vim-lsp.vim')
 call s:source_rc('plugin/vim-sclow.vim')
+call s:source_rc('plugin/vim-lsp-ale.vim')
+call s:source_rc('plugin/ale.vim')
+call s:source_rc('plugin/vim-surround.vim')
+call s:source_rc('plugin/auto-pairs.vim')
 
 " -------------
 " NeoVim向けPlugIn
