@@ -55,6 +55,7 @@ call s:source_rc('plugin/vim-lsp-ale.vim')
 call s:source_rc('plugin/ale.vim')
 call s:source_rc('plugin/vim-surround.vim')
 call s:source_rc('plugin/auto-pairs.vim')
+call s:source_rc('plugin/preview-markdown.vim')
 
 " -------------
 " NeoVim向けPlugIn

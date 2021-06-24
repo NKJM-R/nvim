@@ -21,3 +21,9 @@
 ### Simple modifications
 - 英数キーにescapeキーを割り当てる
 - かなキーにleft_optionを割り当てる
+
+### mdrのインストール
+- markdownのvim内プレビュー機能を使うためには
+- [mdrのGitHub](https://github.com/MichaelMure/mdr)のリリースページからosに一致したものをインストール(uname -a)
+- 実行権限を付与してpathを通す
+
