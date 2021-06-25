@@ -2,8 +2,8 @@
 " vim lsp とaleをつなぐ奴
 "
 
-Plug 'rhysd/vim-lsp-ale'
+" Plug 'rhysd/vim-lsp-ale'
 
-let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
-
-let g:ale_fix_on_save = 1
+" let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+" 
+" let g:ale_fix_on_save = 1
