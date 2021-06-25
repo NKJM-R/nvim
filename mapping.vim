@@ -11,7 +11,7 @@ inoremap <silent> <ESC> <C-\><C-n>
 " ノーマルモード時
 nnoremap n nzz
 nnoremap N Nzz
-nnoremap GG GGzz
+" nnoremap GG GGzz
 
 " us配列用の設定
 
