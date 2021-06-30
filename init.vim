@@ -24,15 +24,14 @@ endfunction
 let mapleader = "\<Space>"
 
 " -------------
-"  vim標準の設定
+" vim標準の設定
 "
 
 call s:source_rc('default.vim')
-call s:source_rc('mapping.vim')
 call s:source_rc('smooth_scroll.vim')
 
 " -------------
-"  PlugIn設定
+" PlugIn設定
 "
 
 call plug#begin('~/.vim/plugged')
@@ -51,12 +50,13 @@ call s:source_rc('plugin/scrollbar.vim')
 call s:source_rc('plugin/traces.vim')
 call s:source_rc('plugin/vim-airline.vim')
 call s:source_rc('plugin/vim-devicons.vim')
+call s:source_rc('plugin/vim-fugitive.vim')
 call s:source_rc('plugin/vim-gitgutter.vim')
 call s:source_rc('plugin/vim-lsp-ale.vim')
 call s:source_rc('plugin/vim-lsp.vim')
 call s:source_rc('plugin/vim-sclow.vim')
 call s:source_rc('plugin/vim-surround.vim')
-call s:source_rc('plugin/vim-fugitive.vim')
+
 " -------------
 " NeoVim向けPlugIn
 call s:source_rc('plugin/blamer.vim')
@@ -69,7 +69,7 @@ call s:source_rc('plugin/molokai.vim')
 call s:source_rc('plugin/shirotelin.vim')
 
 " -------------
-"  プラグインのインストールはここまで
+" プラグインのインストールはここまで
 call plug#end()
 
 " -------------
@@ -83,7 +83,7 @@ colorscheme shirotelin
 let g:airline_theme = 'solarized'
 
 " ------------
-"  起動時の挙動設定
+" 起動時の挙動設定
 "
 
 " ファイルが選択されて起動した場合フォルダツリーの場所を移動する
@@ -96,4 +96,9 @@ autocmd VimEnter * NERDTree | wincmd p
 " 引数なしでの起動ではfzfを起動する
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | Files
+
+" ------------
+" カスタムのマッピング設定
+"
+call s:source_rc('mapping.vim')
 

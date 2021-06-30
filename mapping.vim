@@ -12,13 +12,12 @@ inoremap <silent> <ESC> <C-\><C-n>
 
 nnoremap n nzz
 nnoremap N Nzz
-" nnoremap GG GGzz
 nnoremap <Leader>f :Files<CR>
 
-" us配列用の設定
-
+" Leader系のマッピング設定
 nnoremap <Leader>u :source $MYVIMRC<CR>
 nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>Q :q!<CR>
+nnoremap <Leader>W :wq<CR>
+nnoremap <Leader>q :q!<CR>
+nnoremap <Leader>f :Files<CR>
 
