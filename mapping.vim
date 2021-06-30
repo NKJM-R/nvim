@@ -1,10 +1,10 @@
 " インサートモード時の移動
 
-inoremap <C-b> <Left>
+inoremap <C-b> <C-o>h
 inoremap <C-d> <C-o>x
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>^
-inoremap <C-f> <Right>
+inoremap <C-f> <C-o>l
 
 inoremap <silent> <ESC> <C-\><C-n>
 
@@ -12,12 +12,12 @@ inoremap <silent> <ESC> <C-\><C-n>
 
 nnoremap n nzz
 nnoremap N Nzz
-nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>f <CMD>Files<CR>
 
 " Leader系のマッピング設定
-nnoremap <Leader>u :source $MYVIMRC<CR>
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>W :wq<CR>
-nnoremap <Leader>q :q!<CR>
-nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>u <CMD>source $MYVIMRC<CR>
+nnoremap <Leader>w <CMD>w<CR>
+nnoremap <Leader>W <CMD>wq<CR>
+nnoremap <Leader>q <CMD>q!<CR>
+nnoremap <Leader>f <CMD>Files<CR>
 
