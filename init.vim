@@ -56,6 +56,7 @@ call s:source_rc('plugin/vim-lsp-ale.vim')
 call s:source_rc('plugin/vim-lsp.vim')
 call s:source_rc('plugin/vim-sclow.vim')
 call s:source_rc('plugin/vim-surround.vim')
+call s:source_rc('plugin/vim-multiple-cursors.vim')
 
 " -------------
 " NeoVim向けPlugIn
