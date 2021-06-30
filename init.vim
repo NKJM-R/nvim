@@ -56,7 +56,7 @@ call s:source_rc('plugin/vim-lsp-ale.vim')
 call s:source_rc('plugin/vim-lsp.vim')
 call s:source_rc('plugin/vim-sclow.vim')
 call s:source_rc('plugin/vim-surround.vim')
-
+call s:source_rc('plugin/vim-fugitive.vim')
 " -------------
 " NeoVim向けPlugIn
 call s:source_rc('plugin/blamer.vim')
