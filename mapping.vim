@@ -1,10 +1,11 @@
 " インサートモード時の移動
-
+"
 inoremap <C-b> <C-o>h
 inoremap <C-d> <C-o>x
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>^
 inoremap <C-f> <C-o>l
+inoremap <C-k> <C-o>d$
 
 inoremap <silent> <ESC> <C-\><C-n>
 
