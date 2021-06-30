@@ -2,5 +2,5 @@
 " 変更があったら左端に表示してくれるやつ
 "
 
-" Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 

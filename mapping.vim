@@ -9,9 +9,11 @@ inoremap <C-f> <Right>
 inoremap <silent> <ESC> <C-\><C-n>
 
 " ノーマルモード時
+
 nnoremap n nzz
 nnoremap N Nzz
 " nnoremap GG GGzz
+nnoremap <Leader>f :Files<CR>
 
 " us配列用の設定
 
