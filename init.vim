@@ -54,9 +54,10 @@ call s:source_rc('plugin/vim-fugitive.vim')
 call s:source_rc('plugin/vim-gitgutter.vim')
 call s:source_rc('plugin/vim-lsp-ale.vim')
 call s:source_rc('plugin/vim-lsp.vim')
+call s:source_rc('plugin/vim-multiple-cursors.vim')
 call s:source_rc('plugin/vim-sclow.vim')
 call s:source_rc('plugin/vim-surround.vim')
-call s:source_rc('plugin/vim-multiple-cursors.vim')
+call s:source_rc('plugin/vim-visual-multi.vim')
 
 " -------------
 " NeoVim向けPlugIn
