@@ -29,6 +29,7 @@ let mapleader = "\<Space>"
 
 call s:source_rc('default.vim')
 call s:source_rc('smooth_scroll.vim')
+call s:source_rc('memo.vim')
 
 " -------------
 " PlugIn設定
