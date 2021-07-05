@@ -27,3 +27,6 @@ nnoremap <Leader>f <CMD>Files<CR>
 
 map <leader>z :bp<bar>sp<bar>bn<bar>bd<CR>
 
+" visualモードで選択した奴を検索する
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
