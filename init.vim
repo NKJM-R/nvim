@@ -30,6 +30,7 @@ let mapleader = "\<Space>"
 call s:source_rc('default.vim')
 call s:source_rc('smooth_scroll.vim')
 call s:source_rc('memo.vim')
+call s:source_rc('mapping.vim')
 
 " -------------
 " PlugIn設定
@@ -106,5 +107,4 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | Files
 " ------------
 " カスタムのマッピング設定
 "
-call s:source_rc('mapping.vim')
 
