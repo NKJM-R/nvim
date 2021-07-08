@@ -6,10 +6,6 @@ Plug 'vim-airline/vim-airline-themes'
 
 let g:airline#extensions#tabline#enabled = 1
 
-" タブ間を行き来するやつ
-nmap <C-p> <Plug>AirlineSelectPrevTab
-nmap <C-n> <Plug>AirlineSelectNextTab
-
 " タブに番号表示する
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 
