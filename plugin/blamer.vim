@@ -21,5 +21,5 @@ let g:blamer_prefix = ' > '
 " highlight Blamer guifg=lightgrey
 
 " コミット日を相対形式で表示します
-let g:blamer_relative_time = 0
+let g:blamer_relative_time = 1
 
