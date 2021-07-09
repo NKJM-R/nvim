@@ -62,6 +62,7 @@ call s:source_rc('plugin/vim-sonictemplate.vim')
 call s:source_rc('plugin/vim-surround.vim')
 call s:source_rc('plugin/vim-visual-multi.vim')
 call s:source_rc('plugin/vim-repeat.vim')
+call s:source_rc('plugin/vim-tmux-navigator.vim')
 
 " -------------
 " NeoVim向けPlugIn
