@@ -57,12 +57,13 @@ call s:source_rc('plugin/vim-gitgutter.vim')
 call s:source_rc('plugin/vim-lsp-ale.vim')
 call s:source_rc('plugin/vim-lsp.vim')
 call s:source_rc('plugin/vim-multiple-cursors.vim')
+call s:source_rc('plugin/vim-repeat.vim')
 call s:source_rc('plugin/vim-sclow.vim')
 call s:source_rc('plugin/vim-sonictemplate.vim')
 call s:source_rc('plugin/vim-surround.vim')
-call s:source_rc('plugin/vim-visual-multi.vim')
-call s:source_rc('plugin/vim-repeat.vim')
 call s:source_rc('plugin/vim-tmux-navigator.vim')
+call s:source_rc('plugin/vim-visual-multi.vim')
+call s:source_rc('plugin/winresizer.vim')
 
 " -------------
 " NeoVim向けPlugIn
