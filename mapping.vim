@@ -21,9 +21,11 @@ nnoremap <C-y> <C-y>k
 " 折り返し時に表示行単位での移動できるようにする
 nnoremap j gj
 nnoremap k gk
+nnoremap <C-w><C-e> <CMD>WinResizerStartResize<CR>
 " タブ間を行き来するやつ
 nmap <C-p> <Plug>AirlineSelectPrevTab
 nmap <C-n> <Plug>AirlineSelectNextTab
+
 
 
 " Leader系のマッピング設定
