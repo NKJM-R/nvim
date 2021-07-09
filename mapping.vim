@@ -1,3 +1,5 @@
+noremap! ¥ \
+
 " インサートモード時の移動
 inoremap <C-b> <C-o>h
 inoremap <C-d> <C-o>x
