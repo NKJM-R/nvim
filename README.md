@@ -14,6 +14,11 @@
 - リピート入力認識までの時間 => 早い
 
 ## Karabiner-Elements
+- open /Library/Application\ Support/org.pqrs/Karabiner-Elements/bin/          
+- karabiner-globe
+- karabiner-observer
+- 追加
+
 ### Complex modifications Add rule
 - escキーを押したときに、英数キーも送信する(vim用）
 - Ctrl + \[ を押したときに英数キーを送信する
