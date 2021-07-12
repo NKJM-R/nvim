@@ -35,7 +35,6 @@ call s:source_rc('start_up.vim')
 "
 call plug#begin('~/.vim/plugged')
 
-
 call s:source_rc('plugin/ale.vim')
 call s:source_rc('plugin/auto-pairs.vim')
 call s:source_rc('plugin/deoplete.vim')
