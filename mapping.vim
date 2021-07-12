@@ -46,6 +46,10 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
+nnoremap <C-w><C-h> :TmuxNavigateLeft<cr>
+nnoremap <C-w><C-j> :TmuxNavigateDown<cr>
+nnoremap <C-w><C-k> :TmuxNavigateUp<cr>
+nnoremap <C-w><C-l> :TmuxNavigateRight<cr>
 nnoremap <C-w>h :TmuxNavigateLeft<cr>
 nnoremap <C-w>j :TmuxNavigateDown<cr>
 nnoremap <C-w>k :TmuxNavigateUp<cr>
