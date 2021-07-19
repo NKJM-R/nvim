@@ -7,3 +7,5 @@ Plug 'mattn/vim-sonictemplate'
 
 let g:sonictemplate_vim_template_dir = expand('~/.config/nvim/sonictemplate')
 
+" control l でテンプレートに変換
+let g:sonictemplate_postfix_key = '<C-l>'
