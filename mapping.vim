@@ -36,6 +36,8 @@ nnoremap <Leader>w <CMD>w<CR>
 nnoremap <Leader>W <CMD>wq<CR>
 nnoremap <Leader>q <CMD>q!<CR>
 nnoremap <Leader>f <CMD>Files<CR>
+nnoremap <Leader>n <CMD>NERDTree<CR>
+
 
 " 現在のバッファだけを閉じる
 map <leader>z :bp<bar>sp<bar>bn<bar>bd<CR>
