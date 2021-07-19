@@ -23,12 +23,13 @@ nnoremap <C-y> <C-y>k
 " 折り返し時に表示行単位での移動できるようにする
 nnoremap j gj
 nnoremap k gk
+
+" リサイズ
 nnoremap <C-w><C-e> <CMD>WinResizerStartResize<CR>
-" タブ間を行き来するやつ
+
+"タブ間を行き来するやつ
 nmap <C-p> <Plug>AirlineSelectPrevTab
 nmap <C-n> <Plug>AirlineSelectNextTab
-
-
 
 " Leader系のマッピング設定
 nnoremap <Leader>u <CMD>source $MYVIMRC<CR>
@@ -45,9 +46,23 @@ map <leader>z :bp<bar>sp<bar>bn<bar>bd<CR>
 " visualモードで選択した奴を検索する
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
+" 選択した範囲を囲う
+vnoremap <Leader>s` y:s:<C-R>=escape(@","/\ " )<CR>:`\0`<CR>
+vnoremap <Leader>s" y:s:<C-R>=escape(@","/\ " )<CR>:"\0"<CR>
+vnoremap <Leader>s' y:s:<C-R>=escape(@",'/\ ' )<CR>:'\0'<CR>
+vnoremap <Leader>s( y:s:<C-R>=escape(@",'/\ ' )<CR>:(\0)<CR>
+vnoremap <Leader>s) y:s:<C-R>=escape(@",'/\ ' )<CR>:(\0)<CR>
+vnoremap <Leader>s{ y:s:<C-R>=escape(@",'/\ ' )<CR>:{\0}<CR>
+vnoremap <Leader>s} y:s:<C-R>=escape(@",'/\ ' )<CR>:{\0}<CR>
+vnoremap <Leader>s[ y:s:<C-R>=escape(@",'/\ ' )<CR>:[\0]<CR>
+vnoremap <Leader>s] y:s:<C-R>=escape(@",'/\ ' )<CR>:[\0]<CR>
+
+" 選択した範囲を翻訳
+vnoremap <Leader>t :Translate<CR>
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
+" tmuxと連携したウィンドウの移動
 nnoremap <C-w><C-h> :TmuxNavigateLeft<cr>
 nnoremap <C-w><C-j> :TmuxNavigateDown<cr>
 nnoremap <C-w><C-k> :TmuxNavigateUp<cr>
