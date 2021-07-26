@@ -20,3 +20,5 @@ let g:webdevicons_enable_nerdtree = 1
 
 " 隠しファイルの表示
 let NERDTreeShowHidden = 1
+
+let g:NERDTreeLimitedSyntax = 1
