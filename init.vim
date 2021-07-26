@@ -88,4 +88,3 @@ colorscheme shirotelin
 " Mac標準ターミナルだとsolarizedのが視認しやすい
 " let g:airline_theme = 'solarized'
 let g:airline_theme = 'zenburn'
-
