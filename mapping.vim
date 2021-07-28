@@ -1,10 +1,19 @@
 noremap! ¥ \
 
+" コマンドラインモード
+cnoremap <C-a> <Home>
+cnoremap <C-b> <Left>
+cnoremap <C-d> <Del>
+cnoremap <C-e> <End>
+cnoremap <C-f> <Right>
+cnoremap <C-n> <Down>
+cnoremap <C-p> <Up>
+
 " インサートモード時の移動
+inoremap <C-a> <C-o>^
 inoremap <C-b> <C-o>h
 inoremap <C-d> <C-o>x
 inoremap <C-e> <C-o>$
-inoremap <C-a> <C-o>^
 inoremap <C-f> <C-o>l
 inoremap <C-k> <C-o>d$
 
@@ -25,7 +34,7 @@ nnoremap j gj
 nnoremap k gk
 
 " リサイズ
-nnoremap <C-w><C-e> <CMD>WinResizerStartResize<CR>
+" nnoremap <C-w><C-e> <CMD>WinResizerStartResize<CR>
 
 "タブ間を行き来するやつ
 nmap <C-p> <Plug>AirlineSelectPrevTab
@@ -59,6 +68,7 @@ vnoremap <Leader>s] y:s:<C-R>=escape(@",'/\ ' )<CR>:[\0]<CR>
 
 " 選択した範囲を翻訳
 vnoremap <Leader>t :Translate<CR>
+
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
@@ -71,4 +81,3 @@ nnoremap <C-w>h :TmuxNavigateLeft<cr>
 nnoremap <C-w>j :TmuxNavigateDown<cr>
 nnoremap <C-w>k :TmuxNavigateUp<cr>
 nnoremap <C-w>l :TmuxNavigateRight<cr>
-" nnoremap <C-w>h :TmuxNavigatePrevious<cr>
