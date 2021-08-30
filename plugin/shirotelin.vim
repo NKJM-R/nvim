@@ -2,4 +2,3 @@
 " 白系のカラースキーム
 
 Plug 'yasukotelin/shirotelin'
-

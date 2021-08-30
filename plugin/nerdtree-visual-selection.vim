@@ -3,4 +3,3 @@
 "
 
 Plug 'PhilRunninger/nerdtree-visual-selection'
-

@@ -2,4 +2,3 @@
 " nerdtreeの拡張プラグイン アイコンに色つけてくれる
 
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
