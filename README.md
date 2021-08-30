@@ -16,6 +16,8 @@
 - Nerd Fontをインストールしないと文字化けする
   - https://github.com/ryanoasis/nerd-fonts#font-installation
   - 参考ドキュメント: https://qiita.com/park-jh/items/4358d2d33a78ec0a2b5c
+- Theme
+  - https://github.com/yasukotelin/shirotelin
 
 ### システム環境設定　-> キーボード 
 - キーのリピート　=> 早い 
