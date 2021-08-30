@@ -4,6 +4,9 @@
 
 # コーディング環境
 
+# plug管理
+- https://github.com/junegunn/vim-plug
+
 ## キーボード
 - HHKB
   - HHKB設定は2と6がONの他はOFF
