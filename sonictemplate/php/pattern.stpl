@@ -1,4 +1,4 @@
 ^log$
-	console.log({{_cursor_}});
+	Log::write('DEBUG_MESSEGE', var_export({{_cursor_}}, true));
 \(\S\+\)\.log$
-	Log::write('DEBUG_MESSEGE', var_export({{$1}}, true))
+	Log::write('DEBUG_MESSEGE', var_export({{$1}}, true));

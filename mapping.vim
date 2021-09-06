@@ -1,4 +1,4 @@
-noremap! ¥ \
+map! ¥ \
 
 " コマンドラインモード
 cnoremap <C-a> <Home>
