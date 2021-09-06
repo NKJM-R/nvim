@@ -29,6 +29,7 @@ call s:source_rc('mapping.vim')
 call s:source_rc('memo.vim')
 call s:source_rc('smooth_scroll.vim')
 call s:source_rc('start_up.vim')
+call s:source_rc('yank_path.vim')
 
 " -------------
 " PlugIn設定
@@ -38,6 +39,7 @@ call plug#begin('~/.vim/plugged')
 call s:source_rc('plugin/ale.vim')
 call s:source_rc('plugin/auto-pairs.vim')
 call s:source_rc('plugin/fzf.vim')
+call s:source_rc('plugin/lsp/coc.vim')
 call s:source_rc('plugin/nerdtree-buffer-ops.vim')
 call s:source_rc('plugin/nerdtree-git.vim')
 call s:source_rc('plugin/nerdtree-syntax-highlight.vim')
