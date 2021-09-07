@@ -61,3 +61,7 @@ set wrapscan
 " 検索語をハイライト表示
 set hlsearch
 
+" ポップアップの透過
+" set pumblend=30
+" floating windowの透過
+" set winblend=50
