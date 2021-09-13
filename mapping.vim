@@ -48,6 +48,8 @@ nnoremap <Leader>q <CMD>q!<CR>
 nnoremap <Leader>f <CMD>Files<CR>
 nnoremap <Leader>n <CMD>NERDTree<CR>
 
+" 現在開いているスクリプトを読み込む
+nnoremap S :source %<CR>
 
 " 現在のバッファだけを閉じる
 map <leader>z :bp<bar>sp<bar>bn<bar>bd<CR>
