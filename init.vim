@@ -30,6 +30,7 @@ call s:source_rc('memo.vim')
 call s:source_rc('smooth_scroll.vim')
 call s:source_rc('start_up.vim')
 call s:source_rc('yank_path.vim')
+call s:source_rc('todo.vim')
 
 " -------------
 " PlugIn設定
