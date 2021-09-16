@@ -25,10 +25,6 @@
 - リピート入力認識までの時間 => 早い
 
 ## Karabiner-Elements
-- open /Library/Application\ Support/org.pqrs/Karabiner-Elements/bin/
-- セキュリティとプライバシー　=> 入力監視に以下を追加
-- karabiner-grabber
-- karabiner-observer
 
 ### Complex modifications Add rule
 - escキーを押したときに、英数キーも送信する(vim用）
