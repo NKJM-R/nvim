@@ -1,3 +1,6 @@
+" -------------
+" 
+"
 if has('nvim')
     let g:vim_home = expand('~/.config/nvim')
 else
@@ -39,7 +42,9 @@ call plug#begin('~/.vim/plugged')
 call s:source_rc('plugin/ale.vim')
 call s:source_rc('plugin/auto-pairs.vim')
 call s:source_rc('plugin/fzf.vim')
+call s:source_rc('plugin/lsp/LanguageClient-nvim.vim')
 call s:source_rc('plugin/lsp/coc.vim')
+call s:source_rc('plugin/lsp/vim-lsp.vim')
 call s:source_rc('plugin/nerdtree-buffer-ops.vim')
 call s:source_rc('plugin/nerdtree-git.vim')
 call s:source_rc('plugin/nerdtree-syntax-highlight.vim')
@@ -53,7 +58,6 @@ call s:source_rc('plugin/vim-cheatsheet.vim')
 call s:source_rc('plugin/vim-devicons.vim')
 call s:source_rc('plugin/vim-fugitive.vim')
 call s:source_rc('plugin/vim-gitgutter.vim')
-call s:source_rc('plugin/vim-lsp.vim')
 call s:source_rc('plugin/vim-repeat.vim')
 call s:source_rc('plugin/vim-sonictemplate.vim')
 call s:source_rc('plugin/vim-surround.vim')
@@ -62,6 +66,7 @@ call s:source_rc('plugin/winresizer.vim')
 
 " -------------
 " NeoVim向けPlugIn
+"
 call s:source_rc('plugin/blamer.vim')
 
 " -------------
@@ -71,6 +76,7 @@ call s:source_rc('plugin/shirotelin.vim')
 
 " -------------
 " プラグインのインストールはここまで
+"
 call plug#end()
 
 " -------------
