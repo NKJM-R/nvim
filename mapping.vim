@@ -33,6 +33,9 @@ nnoremap <C-y> <C-y>k
 nnoremap j gj
 nnoremap k gk
 
+" アスタリスクで次の候補に移動しないよする
+nmap * *N
+
 " リサイズ
 " nnoremap <C-w><C-e> <CMD>WinResizerStartResize<CR>
 
