@@ -42,7 +42,6 @@ call plug#begin('~/.vim/plugged')
 
 call s:source_rc('plugin/auto-pairs.vim')
 call s:source_rc('plugin/fzf.vim')
-call s:source_rc('plugin/lsp/coc.vim')
 call s:source_rc('plugin/lsp/nvim-lsp-installer.vim')
 call s:source_rc('plugin/lsp/nvim-lspconfig.vim')
 call s:source_rc('plugin/nerdtree-buffer-ops.vim')
