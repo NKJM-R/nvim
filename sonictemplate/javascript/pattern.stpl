@@ -1,4 +1,0 @@
-^log$
-	console.log({{_cursor_}});
-\(\S\+\)\.log$
-	console.log({{$1}});
