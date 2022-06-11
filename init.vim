@@ -41,6 +41,7 @@ call s:source_rc('todo.vim')
 call plug#begin('~/.vim/plugged')
 
 call s:source_rc('plugin/auto-pairs.vim')
+call s:source_rc('plugin/go-imports.vim')
 call s:source_rc('plugin/fzf.vim')
 call s:source_rc('plugin/lsp/nvim-lsp-installer.vim')
 call s:source_rc('plugin/lsp/nvim-lspconfig.vim')
@@ -88,4 +89,5 @@ colorscheme shirotelin
 " let g:airline_theme = 'solarized'
 "
 
+" LSP設定用のlua記載のファイル
 call s:source_rc('./nvim-cmp-config.vim')

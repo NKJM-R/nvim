@@ -1,5 +1,6 @@
 " GitHub: https://github.com/preservim/nerdtree
 " フォルダ表示してくれるやつ
+"
 
 Plug 'preservim/nerdtree'
 
