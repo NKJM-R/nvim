@@ -1,0 +1,15 @@
+{
+  "スニペット追加": {
+    "prefix": "vsniAdd",
+    "body": [
+      "\"$1\": {",
+      "  \"prefix\": \"$2\",",
+      "  \"body\": [",
+      "    \"$3\"",
+      "  ],",
+      "  \"description\": \"description\"",
+      "}"
+    ],
+    "description": "スニペット追加"
+  }
+}
