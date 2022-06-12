@@ -91,8 +91,9 @@ colorscheme shirotelin
 
 " lua読み込み
 lua <<EOF
+  -- luaにパスの追加
+  package.path=package.path..';'..os.getenv("HOME")..'/.config/nvim/?.lua'
 
   -- LSP補完設定のluaファイル
-  require'~/.config/nvim/nvim-cmp-config'
-
+  require'nvim-cmp-config'
 EOF
