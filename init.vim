@@ -89,5 +89,10 @@ colorscheme shirotelin
 " let g:airline_theme = 'solarized'
 "
 
-" LSP設定用のlua記載のファイル
-call s:source_rc('./nvim-cmp-config.vim')
+" lua読み込み
+lua <<EOF
+
+  -- LSP補完設定のluaファイル
+  require'./nvim-cmp-config'
+
+EOF
