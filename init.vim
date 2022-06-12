@@ -93,6 +93,6 @@ colorscheme shirotelin
 lua <<EOF
 
   -- LSP補完設定のluaファイル
-  require'./nvim-cmp-config'
+  require'~/.config/nvim/nvim-cmp-config'
 
 EOF
