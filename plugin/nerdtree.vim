@@ -2,9 +2,9 @@
 " フォルダ表示してくれるやつ
 "
 
-Plug 'preservim/nerdtree'
-
-" 最後のバッファを閉じたら自動でフォルダ表示も閉じる
+"  'preservim/nerdtree'
+" 
+" " 最後のバッファを閉じたら自動でフォルダ表示も閉じる
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
 

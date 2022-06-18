@@ -2,7 +2,6 @@
 " golangの自動インポート用のライブラリ
 "
 
-Plug 'mattn/vim-goimports'
 let g:goimports = 1
 let g:goimports_simplify = 1
 

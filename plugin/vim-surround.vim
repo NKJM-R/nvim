@@ -2,4 +2,3 @@
 " 文字の周りのやつ変える奴
 "
 
-Plug 'tpope/vim-surround'

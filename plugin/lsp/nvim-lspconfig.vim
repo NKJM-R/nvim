@@ -1,10 +1,10 @@
-Plug 'neovim/nvim-lspconfig'
-
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
+"Plug 'neovim/nvim-lspconfig'
+"
+"Plug 'neovim/nvim-lspconfig'
+"Plug 'hrsh7th/cmp-nvim-lsp'
+"Plug 'hrsh7th/cmp-buffer'
+"Plug 'hrsh7th/cmp-path'
+"Plug 'hrsh7th/cmp-cmdline'
 
 " For vsnip users.
 " Plug 'hrsh7th/cmp-vsnip'
