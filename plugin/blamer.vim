@@ -2,7 +2,6 @@
 " GitLensみたいなやつ
 " 参考文献: https://qiita.com/Yoika/items/26553e8ad067b9e468e8
 
-Plug 'APZelos/blamer.nvim'
 
 " blamer.nvim設定
 " format
