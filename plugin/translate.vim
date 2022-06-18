@@ -2,7 +2,6 @@
 " 翻訳してくれるやつ
 "
 
-
 " 翻訳元言語
 let g:translate_source = "en"
 " 翻訳先言語

@@ -20,7 +20,7 @@ require('jetpack').startup(function(use)
   --
   use 'markonm/traces.vim'
   use 'mattn/vim-goimports'
-  use 'PhilRunninger/nerdtree-buffer-ops'
+  use 'PhilRunninger/nerdtree-buffer-ops' -- nerdtreeの拡張プラグイン: 開いてる奴を強調表示してくれるらしい
   use 'skanehira/translate.vim'
   use 'airblade/vim-gitgutter'
   use 'https://github.com/tpope/vim-repeat'
