@@ -32,3 +32,4 @@ require('jetpack').startup(function(use)
   --  use 'APZelos/blamer.nvim'
 end)
 require('bufferline').setup {}
+vim.go['jetpack#optimization'] = 3
