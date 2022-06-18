@@ -2,4 +2,4 @@
 " nerdtreeの拡張プラグイン 選択の時にiとかで水平展開してくれたりする
 "
 
-Plug 'PhilRunninger/nerdtree-visual-selection'
+"Plug 'PhilRunninger/nerdtree-visual-selection'

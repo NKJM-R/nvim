@@ -2,5 +2,5 @@
 " nerdtreeの拡張プラグイン: 開いてる奴を強調表示してくれるらしい
 "
 
-Plug 'PhilRunninger/nerdtree-buffer-ops'
+"Plug 'PhilRunninger/nerdtree-buffer-ops'
 

@@ -16,5 +16,19 @@ require('jetpack').startup(function(use)
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/vim-vsnip-integ'
+
+  --
+  use 'markonm/traces.vim'
+  use 'mattn/vim-goimports'
+  use 'PhilRunninger/nerdtree-buffer-ops'
+  use 'skanehira/translate.vim'
+  use 'airblade/vim-gitgutter'
+  use 'https://github.com/tpope/vim-repeat'
+  use 'tpope/vim-surround'
+  use 'christoomey/vim-tmux-navigator' -- " vimとtmuxでシームレスに移動する
+  use 'simeji/winresizer'
+
+  -- 遅い
+  --  use 'APZelos/blamer.nvim'
 end)
 require('bufferline').setup {}

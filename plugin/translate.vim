@@ -2,7 +2,6 @@
 " 翻訳してくれるやつ
 "
 
-Plug 'skanehira/translate.vim'
 
 " 翻訳元言語
 let g:translate_source = "en"
