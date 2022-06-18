@@ -1,9 +1,3 @@
-Plug 'hrsh7th/vim-vsnip'
-Plug 'hrsh7th/vim-vsnip-integ'
-
-" 補完用プラグイン
-Plug 'hrsh7th/cmp-vsnip'
-
 " NOTE: You can use other key to expand snippet.
 let g:vsnip_snippet_dir = '~/.config/nvim/vsnip'
 
