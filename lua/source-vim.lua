@@ -1,0 +1,5 @@
+vim.cmd('source ' .. '~/.config/nvim/memo.vim')
+vim.cmd('source ' .. '~/.config/nvim/smooth_scroll.vim')
+vim.cmd('source ' .. '~/.config/nvim/start_up.vim')
+vim.cmd('source ' .. '~/.config/nvim/todo.vim')
+vim.cmd('source ' .. '~/.config/nvim/yank_path.vim')
