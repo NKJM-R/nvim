@@ -12,7 +12,7 @@ require('jetpack').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
 
-  --
+  -- etc
   use 'PhilRunninger/nerdtree-buffer-ops' -- nerdtreeの拡張プラグイン: 開いてる奴を強調表示してくれるらしい
   use 'airblade/vim-gitgutter'
   use 'christoomey/vim-tmux-navigator' -- " vimとtmuxでシームレスに移動する
@@ -20,6 +20,7 @@ require('jetpack').startup(function(use)
   use 'junegunn/fzf.vim'
   use 'markonm/traces.vim'
   use 'mattn/vim-goimports'
+  use 'nkjm-r/smooth-scroll.vim' -- <C-d><C-u>の挙動を少し変える
   use 'preservim/nerdtree'
   use 'simeji/winresizer'
   use 'skanehira/translate.vim'
@@ -28,8 +29,6 @@ require('jetpack').startup(function(use)
   use { 'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons' }
   use { 'junegunn/fzf', run = 'call fzf#install()' }
 
-  -- 遅い
-  -- use 'APZelos/blamer.nvim'
 end)
 
 vim.api.nvim_command [[autocmd CursorHold   * lua require'origin.gitlens'.blameVirtText()]] 
