@@ -31,9 +31,7 @@ require('jetpack').startup(function(use)
   -- 遅い
   -- use 'APZelos/blamer.nvim'
 end)
-require('bufferline').setup {}
 
--- vim.api.nvim_set_option('updatetime', 100)
 vim.api.nvim_command [[autocmd CursorHold   * lua require'origin.gitlens'.blameVirtText()]] 
 vim.api.nvim_command [[autocmd CursorMoved  * lua require'origin.gitlens'.clearBlameVirtText()]]
 vim.api.nvim_command [[autocmd CursorMovedI * lua require'origin.gitlens'.clearBlameVirtText()]]
