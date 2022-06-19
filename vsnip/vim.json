@@ -1,0 +1,11 @@
+{
+  "コメント": {
+  "prefix": "PlugDiscription",
+  "body": [
+    "\" GitHub: $1",
+    "\" $2",
+    "\""
+  ],
+  "description": "コメント"
+  }
+}
