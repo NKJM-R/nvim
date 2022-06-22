@@ -9,25 +9,43 @@
     ],
     "description": "Class"
   },
-  "競技プログラミング用初期化コード": {
-    "prefix": "CompetitiveProgrammingInit",
+  "入力値からString配列で取得": {
+    "prefix": "SnippetGetStringsFromInput",
     "body": [
-      "var reader = require('readline').createInterface({",
+      "const line = (() => { return inpuLines[0].split(' ') })();"
+    ],
+    "description": "入力値からString配列で取得"
+  },
+  "入力値からNumberで取得": {
+    "prefix": "SnippetGetConvertedNumbersFromInput",
+    "body": [
+      "const [a, b, c] = ((): number[] => {",
+      "  const [_a, _b, _c] = inpuLines[0].split(' ')",
+      "  return [Number(_a), Number(_b), Number(_c)]",
+      "})()",
+      "console.log(a,b,c)"
+    ],
+    "description": "入力値からNumberで取得"
+  },
+  "競技プログラミング用初期化コード": {
+    "prefix": "SnippetCompetitiveProgrammingInit",
+    "body": [
+      "import { createInterface } from 'readline'",
+      "const reader = createInterface({",
       "  input: process.stdin,",
       "  output: process.stdout",
       "});",
       "",
+      "const inpuLines: string[] = []",
       "reader.on('line', (line: string) => {",
-      "  lines.push(line);",
+      "  inpuLines.push(line);",
       "});",
       "",
-      "reader.on('close', () => {",
-      "  var N = Number(lines[0]);",
-      "  for (var i = 0; i < N; i++) {",
-      "    var line = lines[i + 1].split(\" \");",
-      "    console.log(\"hello = \" + line[0] + \", world = \" + line[1]);",
-      "  }",
-      "});"
+      "const main = () => {",
+      "}",
+      "",
+      "reader.on('close', main);",
+      ""
     ],
     "description": "競技プログラミング用初期化コード"
   }
