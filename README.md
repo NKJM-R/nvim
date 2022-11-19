@@ -2,6 +2,9 @@
 
 - ソート系のまとめ: https://qiita.com/rohinomiya/items/f6c175e1f7d529cb15f0
 
+# プラグインの更新
+- ``:JetpackSync``
+
 # コーディング環境
 
 # plug管理

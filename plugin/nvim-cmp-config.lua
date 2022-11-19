@@ -36,7 +36,7 @@ for _, server in ipairs(lsp_installer.get_installed_servers()) do
 end
 
 -- lspconfig[server.name].setupに追加
-capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 -- 最後に追加
 vim.opt.completeopt = "menu,menuone,noselect"
