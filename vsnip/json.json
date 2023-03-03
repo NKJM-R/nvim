@@ -1,6 +1,6 @@
 {
   "スニペット追加": {
-    "prefix": "vsniAdd",
+    "prefix": "AddSnippet",
     "body": [
       "\"$1\": {",
       "  \"prefix\": \"$2\",",

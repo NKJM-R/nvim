@@ -23,6 +23,7 @@ require('jetpack').startup(function(use)
   use 'nkjm-r/smooth-scroll.vim' -- <C-d><C-u>の挙動を少し変える
   use 'preservim/nerdtree'
   use 'simeji/winresizer'
+  use 'skanehira/jumpcursor.vim' -- 移動系
   use 'skanehira/translate.vim'
   use 'tpope/vim-surround'
   use 'yasukotelin/shirotelin'
@@ -36,4 +37,4 @@ vim.api.nvim_command [[autocmd CursorMoved  * lua require'origin.gitlens'.clearB
 vim.api.nvim_command [[autocmd CursorMovedI * lua require'origin.gitlens'.clearBlameVirtText()]]
 
 -- 最適化設定
-vim.go['jetpack#optimization'] = 3
+vim.g['jetpack#optimization'] = 1
