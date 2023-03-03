@@ -29,11 +29,12 @@ vim.keymap.set("n", "<C-e>", "<C-e>j", { noremap = true })
 vim.keymap.set("n", "<C-y>", "<C-y>k", { noremap = true })
 vim.keymap.set("n", "j", "gj", { noremap = true }) -- 折り返し時に表示行単位での移動できるようにする
 vim.keymap.set("n", "k", "gk", { noremap = true }) -- 折り返し時に表示行単位での移動できるようにする
-vim.keymap.set("n", "*", "*N", { noremap = true })
+vim.keymap.set("n", "*", "*Nzz", { noremap = true })
 vim.keymap.set("n", "<C-n>", "<CMD>bnext<CR>", { noremap = true, silent = true }) -- バッファー間を行き来する
 vim.keymap.set("n", "<C-p>", "<CMD>bprev<CR>", { noremap = true, silent = true }) -- バッファー間を行き来する
 vim.keymap.set("n", "g<C-n>", "<CMD>tabnext<CR>", { noremap = true, silent = true }) -- タブ間を行き来する
 vim.keymap.set("n", "g<C-p>", "<CMD>tabprev<CR>", { noremap = true, silent = true }) -- タブ間を行き来する
+
 -- Leader系のマッピング設定
 vim.keymap.set("n", "<Leader>u", "<CMD>source $MYVIMRC<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>w", "<CMD>w<CR>", { noremap = true, silent = true })
@@ -55,6 +56,7 @@ vim.keymap.set("n", "<C-w>l", ":TmuxNavigateRight<CR>", { noremap = true })
 -- visula
 vim.keymap.set("v", "<Leader>t", ":Translate", { noremap = true })
 vim.keymap.set("v", "//", "y/\\V<C-R>=escape(@\",'/\\')<CR><CR>", { noremap = true })
+vim.keymap.set("v", 'Y', '<CMD> s:YankFullPath()<CR>', { noremap = true })
 vim.keymap.set("v", '<Leader>s`', 'y:s:<c-r>=escape(@","/\\ " )<CR>:`\\0`<CR>', { noremap = true })
 vim.keymap.set("v", '<Leader>s"', 'y:s:<c-r>=escape(@","/\\ " )<CR>:"\\0"<CR>', { noremap = true })
 vim.keymap.set("v", '<Leader>s(', 'y:s:<c-r>=escape(@","/\\ " )<CR>:(\\0)<CR>', { noremap = true })
