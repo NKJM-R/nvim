@@ -53,7 +53,7 @@ vim.keymap.set("n", "<C-w>j", ":TmuxNavigateDown<CR>", { noremap = true })
 vim.keymap.set("n", "<C-w>k", ":TmuxNavigateUp<CR>", { noremap = true })
 vim.keymap.set("n", "<C-w>l", ":TmuxNavigateRight<CR>", { noremap = true })
 
--- visula
+-- visual
 vim.keymap.set("v", "<Leader>t", ":Translate", { noremap = true })
 vim.keymap.set("v", "//", "y/\\V<C-R>=escape(@\",'/\\')<CR><CR>", { noremap = true })
 vim.keymap.set("v", 'Y', '<CMD> s:YankFullPath()<CR>', { noremap = true })
@@ -66,3 +66,5 @@ vim.keymap.set("v", '<Leader>s}', 'y:s:<c-r>=escape(@","/\\ " )<CR>:{\\0}<CR>', 
 vim.keymap.set("v", '<Leader>s[', 'y:s:<c-r>=escape(@","/\\ " )<CR>:[\\0]<CR>', { noremap = true })
 vim.keymap.set("v", '<Leader>s]', 'y:s:<c-r>=escape(@","/\\ " )<CR>:[\\0]<CR>', { noremap = true })
 vim.keymap.set("v", '<Leader>s\'', 'y:s:<c-r>=escape(@","/\\ " )<CR>:"\\0"<CR>', { noremap = true })
+
+vim.keymap.set("v", '<Leader>y', '"+y', { noremap = true }) -- クリップボードにコピー
