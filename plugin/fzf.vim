@@ -1,7 +1,7 @@
 nnoremap <silent> <Leader>F :<C-u>silent call <SID>find_rip_grep()<CR>
 
 " ファイル全体でのインクリメントサーチ　
-" 別途で install ripgrep が必要だと思う気がすると感じた
+" 別途で install ripgrep が必要
 function! s:find_rip_grep() abort
     call fzf#vim#grep(
                 \   'rg --ignore-file ~/.ignore --column --line-number --no-heading --hidden --smart-case .+',
@@ -11,3 +11,7 @@ function! s:find_rip_grep() abort
                 \ )
 endfunction
 
+" luaから呼び出したい
+function! GlobalWrapper_find_rip_grep() abort
+  call s:find_rip_grep()
+endfunction

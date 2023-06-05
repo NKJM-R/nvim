@@ -27,6 +27,7 @@ local on_attach = function(client, bufnr)
 end
 
 local lspconfig = require "lspconfig"
+lspconfig.lua_ls.setup({})
 local lsp_installer = require("nvim-lsp-installer")
 lsp_installer.setup {}
 for _, server in ipairs(lsp_installer.get_installed_servers()) do
@@ -34,6 +35,7 @@ for _, server in ipairs(lsp_installer.get_installed_servers()) do
     on_attach = on_attach,
   }
 end
+
 
 -- lspconfig[server.name].setupに追加
 capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())

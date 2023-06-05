@@ -1,3 +1,4 @@
+-- <Leader>の設定
 vim.keymap.set("n", "<Space>", "<Nop>")
 vim.g.mapleader = " "
 
@@ -36,13 +37,14 @@ vim.keymap.set("n", "g<C-n>", "<CMD>tabnext<CR>", { noremap = true, silent = tru
 vim.keymap.set("n", "g<C-p>", "<CMD>tabprev<CR>", { noremap = true, silent = true }) -- タブ間を行き来する
 
 -- Leader系のマッピング設定
-vim.keymap.set("n", "<Leader>u", "<CMD>source $MYVIMRC<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<Leader>u", ":source /Users/ryota-nakajima/.config/nvim/lua/mapping.lua<CR>", { noremap = true, silent = false }) -- 際読み込み
 vim.keymap.set("n", "<Leader>w", "<CMD>w<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>W", "<CMD>wq<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>q", "<CMD>q!<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>f", "<CMD>Files<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>n", "<CMD>NERDTree<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>z", ":bp<bar>sp<bar>bn<bar>bd<CR>", { noremap = true, silent = true })
+
 vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR><Esc>", { noremap = true }) -- ESC連打でハイライト解除
 vim.keymap.set("n", "<C-w><C-h>", ":TmuxNavigateLeft<CR>", { noremap = true })
 vim.keymap.set("n", "<C-w><C-j>", ":TmuxNavigateDown<CR>", { noremap = true })
@@ -53,11 +55,13 @@ vim.keymap.set("n", "<C-w>j", ":TmuxNavigateDown<CR>", { noremap = true })
 vim.keymap.set("n", "<C-w>k", ":TmuxNavigateUp<CR>", { noremap = true })
 vim.keymap.set("n", "<C-w>l", ":TmuxNavigateRight<CR>", { noremap = true })
 
--- visual
-vim.keymap.set("v", "<Leader>t", ":Translate", { noremap = true })
+-- visual 
+vim.keymap.set("v", "<Leader>f", 'y<CR><CMD>lua require("origin.visual").target_find_from_files()<CR>', { noremap = true })
+vim.keymap.set("v", "<Leader>F", 'y<CR><CMD>lua require("origin.visual").target_fazy_find()<CR>', { noremap = true })
+vim.keymap.set("v", "<Leader>t", ":Translate<CR>", { noremap = true })
 vim.keymap.set("v", "//", "y/\\V<C-R>=escape(@\",'/\\')<CR><CR>", { noremap = true })
-vim.keymap.set("v", 'Y', '<CMD> s:YankFullPath()<CR>', { noremap = true })
-vim.keymap.set("v", '<Leader>s`', 'y:s:<c-r>=escape(@","/\\ " )<CR>:`\\0`<CR>', { noremap = true })
+
+vim.keymap.set("v", '<Leader>s`', 'y:s:<c-r>=escape(@","/\\ " )<CR>:`\\0`<CR>', { noremap = true }) -- 範囲内を ` で囲う
 vim.keymap.set("v", '<Leader>s"', 'y:s:<c-r>=escape(@","/\\ " )<CR>:"\\0"<CR>', { noremap = true })
 vim.keymap.set("v", '<Leader>s(', 'y:s:<c-r>=escape(@","/\\ " )<CR>:(\\0)<CR>', { noremap = true })
 vim.keymap.set("v", '<Leader>s)', 'y:s:<c-r>=escape(@","/\\ " )<CR>:(\\0)<CR>', { noremap = true })
