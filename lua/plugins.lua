@@ -12,6 +12,9 @@ require('jetpack').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
 
+  -- linter
+  use 'nvie/vim-flake8'
+
   -- etc
   use 'PhilRunninger/nerdtree-buffer-ops' -- nerdtreeの拡張プラグイン: 開いてる奴を強調表示してくれるらしい
   use 'airblade/vim-gitgutter'

@@ -1,0 +1,17 @@
+{
+    "workspace.library": [
+        "/Users/ryota-nakajima/.config/nvim",
+        "/Users/ryota-nakajima/.local/share/nvim/site",
+        "/Users/ryota-nakajima/.local/share/nvim/site/pack/coc/start/coc.nvim",
+        "/Users/ryota-nakajima/.local/share/nvim/site/pack/jetpack/opt/_",
+        "/Users/ryota-nakajima/.local/share/nvim/site/pack/jetpack/opt/fzf",
+        "/Users/ryota-nakajima/.local/share/nvim/site/pack/jetpack/opt/nvim-cmp",
+        "/Users/ryota-nakajima/.local/share/nvim/site/pack/jetpack/opt/nerdtree",
+        "/Users/ryota-nakajima/.local/share/nvim/site/pack/jetpack/opt/nvim-lsp-installer",
+        "/usr/local/Cellar/neovim/0.9.0/share/nvim/runtime",
+        "/usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/pack/dist/opt/matchit",
+        "/usr/local/Cellar/neovim/0.9.0/lib/nvim",
+        "/Users/ryota-nakajima/.local/share/nvim/site/pack/jetpack/opt/_/after",
+        "${3rd}/luassert/library"
+    ]
+}
