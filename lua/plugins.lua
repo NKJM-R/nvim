@@ -10,12 +10,14 @@ require('jetpack').startup(function(use)
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/vim-vsnip-integ'
   use 'neovim/nvim-lspconfig'
-  use 'williamboman/nvim-lsp-installer'
-
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
   -- linter
   use 'nvie/vim-flake8'
 
   -- etc
+  use 'gennaro-tedesco/nvim-peekup'
+  use 'reireias/vim-cheatsheet' -- チートシート表示プラグイン
   use 'PhilRunninger/nerdtree-buffer-ops' -- nerdtreeの拡張プラグイン: 開いてる奴を強調表示してくれるらしい
   use 'airblade/vim-gitgutter'
   use 'christoomey/vim-tmux-navigator' -- " vimとtmuxでシームレスに移動する

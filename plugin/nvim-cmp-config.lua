@@ -28,13 +28,22 @@ end
 
 local lspconfig = require "lspconfig"
 lspconfig.lua_ls.setup({})
-local lsp_installer = require("nvim-lsp-installer")
-lsp_installer.setup {}
-for _, server in ipairs(lsp_installer.get_installed_servers()) do
-  lspconfig[server.name].setup {
-    on_attach = on_attach,
+local lsp_installer = require("mason")
+lsp_installer.setup {
+  ui = {
+    icons = {
+      package_installed = "✓"
+    }
   }
-end
+}
+-- for _, server in ipairs(lsp_installer.get_installed_servers()) do
+--   lspconfig[server.name].setup {
+--     on_attach = on_attach,
+--   }
+-- end
+require("mason-lspconfig").setup {
+    ensure_installed = { "sumneko_lua" },
+}
 
 
 -- lspconfig[server.name].setupに追加
