@@ -9,9 +9,11 @@ require('jetpack').startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/vim-vsnip-integ'
-  use 'neovim/nvim-lspconfig'
+
+  -- lsp
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
+  use 'neovim/nvim-lspconfig'
   -- linter
   use 'nvie/vim-flake8'
 

@@ -26,25 +26,24 @@ local on_attach = function(client, bufnr)
   buf_set_keymap("n", "<Leader>.", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
 end
 
-local lspconfig = require "lspconfig"
+local lspconfig = require('lspconfig')
 lspconfig.lua_ls.setup({})
 local lsp_installer = require("mason")
-lsp_installer.setup {
+lsp_installer.setup({
   ui = {
     icons = {
       package_installed = "✓"
     }
   }
-}
--- for _, server in ipairs(lsp_installer.get_installed_servers()) do
---   lspconfig[server.name].setup {
---     on_attach = on_attach,
---   }
--- end
-require("mason-lspconfig").setup {
-    ensure_installed = { "sumneko_lua" },
-}
+})
 
+-- for _, server in ipairs(lsp_installer.get_installed_servers()) do
+local mason_lspconfig = require('mason-lspconfig')
+mason_lspconfig.setup_handlers({ function(server)
+  local opts = {}
+  opts.on_attach = on_attach
+  lspconfig[server].setup(opts)
+end })
 
 -- lspconfig[server.name].setupに追加
 capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
