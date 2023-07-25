@@ -39,6 +39,7 @@ lsp_installer.setup({
 
 -- for _, server in ipairs(lsp_installer.get_installed_servers()) do
 local mason_lspconfig = require('mason-lspconfig')
+mason_lspconfig.setup({})
 mason_lspconfig.setup_handlers({ function(server)
   local opts = {}
   opts.on_attach = on_attach
