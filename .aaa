@@ -1,0 +1,40 @@
+- <Leader> = Space
+
+---
+
+コントリビューションガイド
+  - feat
+      - A new feature
+      - 新機能
+  - fix
+      - A bug fix
+      - バグ修正
+  - docs
+      - Documentation only changes
+      - ドキュメントのみの変更
+  - style
+      - Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+      - フォーマットの変更（コードの動作に影響しないスペース、フォーマット、セミコロンなど）
+  - refactor
+      - A code change that neither fixes a bug nor adds a feature
+      - リファクタリングのための変更（機能追加やバグ修正を含まない）
+  - perf
+      - A code change that improves performance
+      - パフォーマンスの改善のための変更
+  - test
+      - Adding missing tests or correcting existing tests
+      - 不足テストの追加や既存テストの修正
+  - build
+      - Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+      - ビルドシステムや外部依存に関する変更（スコープ例: gulp, broccoli, npm）
+  - ci
+      - Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+      - CI用の設定やスクリプトに関する変更（スコープ例: Travis, Circle, BrowserStack, SauceLabs)
+  - chore
+      - Other changes that don't modify src or test files
+      - その他の変更（ソースやテストの変更を含まない）
+  - revert
+      - Reverts a previous commit
+      - 以前のコミットに復帰
+
+---

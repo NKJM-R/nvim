@@ -35,12 +35,13 @@ require('jetpack').startup(function(use)
   use 'yasukotelin/shirotelin'
   use { 'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons' }
   use { 'junegunn/fzf', run = 'call fzf#install()' }
-
 end)
 
 vim.api.nvim_command [[autocmd CursorHold   * lua require'origin.gitlens'.blameVirtText()]] 
 vim.api.nvim_command [[autocmd CursorMoved  * lua require'origin.gitlens'.clearBlameVirtText()]]
 vim.api.nvim_command [[autocmd CursorMovedI * lua require'origin.gitlens'.clearBlameVirtText()]]
+vim.api.nvim_command [[autocmd CursorMovedI * lua require'origin.gitlens'.clearBlameVirtText()]]
+vim.api.nvim_command [[command! -nargs=? CodeReview lua require'origin.code_review'.open_diff_files(<f-args>)]]
 
 -- 最適化設定
 vim.g['jetpack#optimization'] = 1
