@@ -15,7 +15,6 @@ require('jetpack').startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
   use 'neovim/nvim-lspconfig'
   -- linter
-  use 'nvie/vim-flake8'
 
   -- etc
   use 'gennaro-tedesco/nvim-peekup'
