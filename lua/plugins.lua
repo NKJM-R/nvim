@@ -21,6 +21,7 @@ require('jetpack').startup(function(use)
   use 'reireias/vim-cheatsheet' -- チートシート表示プラグイン
   use 'PhilRunninger/nerdtree-buffer-ops' -- nerdtreeの拡張プラグイン: 開いてる奴を強調表示してくれるらしい
   use 'airblade/vim-gitgutter'
+  use 'tpope/vim-fugitive'
   use 'christoomey/vim-tmux-navigator' -- " vimとtmuxでシームレスに移動する
   use 'https://github.com/tpope/vim-repeat'
   use 'junegunn/fzf.vim'

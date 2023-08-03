@@ -37,6 +37,7 @@ vim.keymap.set("n", "g<C-n>", "<CMD>tabnext<CR>", { noremap = true, silent = tru
 vim.keymap.set("n", "g<C-p>", "<CMD>tabprev<CR>", { noremap = true, silent = true }) -- タブ間を行き来する
 vim.keymap.set("n", "<C-[>", ':lua require("origin.jump_to_change_in_indent").jump_to_change_in_indent(false)<CR>', { noremap = true, silent = true })
 vim.keymap.set("n", "<C-]>", ':lua require("origin.jump_to_change_in_indent").jump_to_change_in_indent(true)<CR>', { noremap = true, silent = true })
+vim.keymap.set("n", "<Leader>d", '<CMD>Gvdiffsplit master<CR>', { noremap = true, silent = true })
 
 -- Leader系のマッピング設定
 vim.keymap.set("n", "<Leader>u", ":source /Users/ryota-nakajima/.config/nvim/lua/mapping.lua<CR>", { noremap = true, silent = false }) -- 際読み込み
