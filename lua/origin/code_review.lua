@@ -2,7 +2,7 @@ local M = {}
 
 local function get_project_info()
   local config_dir = vim.fn.stdpath('config')
-  local f = assert(io.popen('python ' .. config_dir .. '/lua/origin/project_utils.py', 'r'))
+  local f = assert(io.popen('python3 ' .. config_dir .. '/lua/origin/project_utils.py', 'r'))
   local s = assert(f:read('*a'))
   f:close()
   return vim.fn.json_decode(s)

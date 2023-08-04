@@ -1,6 +1,5 @@
 import os
 import json
-import sys
 
 
 def find_project_root():
