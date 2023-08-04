@@ -92,20 +92,24 @@ function unmap_review_keymap()
   custom_mapping()
 end
 
-function quit_code_review()
-  unmap_review_keymap()
+function close_review_file()
   vim.cmd('close')
   vim.cmd('bdelete')
 end
 
-function quit_and_next_file()
-  quit_code_review()
+function quit_code_review()
+  unmap_review_keymap()
+  close_review_file()
+end
+
+function next_code_review()
+  close_review_file()
   vim.cmd('bnext')
   vim.cmd('Gvdiffsplit master')
 end
 
-function quit_and_previous_file()
-  quit_code_review()
+function previout_code_review()
+  close_review_file()
   vim.cmd('bprev')
   vim.cmd('Gvdiffsplit master')
 end
@@ -115,8 +119,8 @@ function REVIEW_MODE()
   if vim.bo.readonly then
     print("REVIEW_MODE")
     vim.keymap.set('n', 'q', '<CMD>lua quit_code_review()<CR>')
-    vim.keymap.set('n', '<C-n>', '<CMD>lua quit_and_next_file()<CR>')
-    vim.keymap.set('n', '<C-p>', '<CMD>lua quit_and_previous_file()<CR>')
+    vim.keymap.set('n', '<C-n>', '<CMD>lua next_code_review()<CR>')
+    vim.keymap.set('n', '<C-p>', '<CMD>lua previout_code_review()<CR>')
   end
 end
 
