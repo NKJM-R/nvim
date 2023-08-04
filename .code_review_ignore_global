@@ -1,6 +1,2 @@
 go.mod
 go.sum
-*test*
-__init__.py
-*.mo
-*.po
