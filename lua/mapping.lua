@@ -40,7 +40,7 @@ function custom_mapping()
     { noremap = true, silent = true })
   vim.keymap.set("n", "<C-]>", ':lua require("origin.jump_to_change_in_indent").jump_to_change_in_indent(true)<CR>',
     { noremap = true, silent = true })
-  vim.keymap.set("n", "<Leader>d", '<CMD>Gvdiffsplit master<CR>', { noremap = true, silent = true })
+  vim.keymap.set("n", "<Leader>d", '<CMD>lua REVIEW_MODE()<CR>', { noremap = true, silent = true })
 
 
   -- Leader系のマッピング設定
@@ -92,7 +92,9 @@ function unmap_review_keymap()
   custom_mapping()
 end
 
+local code_review = require('origin.code_review')
 function close_review_file()
+  code_review.append_reviewed_file()
   vim.cmd('close')
   vim.cmd('bdelete')
 end
@@ -116,6 +118,7 @@ end
 
 -- 読専で開いてる時にのみ動作するキーマップ
 function REVIEW_MODE()
+  vim.cmd('Gvdiffsplit master')
   if vim.bo.readonly then
     print("REVIEW_MODE")
     vim.keymap.set('n', 'q', '<CMD>lua quit_code_review()<CR>')
@@ -125,4 +128,4 @@ function REVIEW_MODE()
 end
 
 -- 'readonly' オプションが変更されたときに上記関数を呼び出す
-vim.cmd("autocmd OptionSet readonly lua REVIEW_MODE()")
+-- vim.cmd("autocmd OptionSet readonly lua REVIEW_MODE()")
