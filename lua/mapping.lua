@@ -52,6 +52,7 @@ function custom_mapping()
   vim.keymap.set("n", "<Leader>f", "<CMD>Files<CR>", { noremap = true, silent = true })
   vim.keymap.set("n", "<Leader>n", "<CMD>NERDTree<CR>", { noremap = true, silent = true })
   vim.keymap.set("n", "<leader>z", ":bp<bar>sp<bar>bn<bar>bd<CR>", { noremap = true, silent = true })
+  vim.keymap.set("n", "<leader>R", "ggVG\"+p", { noremap = true, silent = true })
 
   vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR><Esc>", { noremap = true }) -- ESC連打でハイライト解除
   vim.keymap.set("n", "<C-w><C-h>", ":TmuxNavigateLeft<CR>", { noremap = true })
