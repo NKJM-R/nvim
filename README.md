@@ -30,8 +30,9 @@
 ## Karabiner-Elements
 
 ### Complex modifications Add rule
-- escキーを押したときに、英数キーも送信する(vim用）
-- Ctrl + \[ を押したときに英数キーを送信する
+- https://ke-complex-modifications.pqrs.org/?q=esc%E3%82%AD%E3%83%BC%E3%82%92%E6%8A%BC%E3%81%97%E3%81%9F%E3%81%A8%E3%81%8D
+  - escキーを押したときに、英数キーも送信する(vim用）
+  - Ctrl + \[ を押したときに英数キーを送信する: 
 
 ### Simple modifications
 - 英数キーにescapeキーを割り当てる
