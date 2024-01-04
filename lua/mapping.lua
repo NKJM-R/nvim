@@ -1,5 +1,7 @@
--- <Leader>の設定
+local HOME=os.getenv('HOME')
+vim=vim
 function custom_mapping()
+  -- <Leader>の設定
   vim.keymap.set("n", "<Space>", "<Nop>")
   vim.g.mapleader = " "
 
@@ -20,6 +22,7 @@ function custom_mapping()
   vim.keymap.set("i", "<C-e>", "<End>", { noremap = true })
   vim.keymap.set("i", "<C-f>", "<Right>", { noremap = true })
   vim.keymap.set("i", "<C-k>", "<C-o>d$", { noremap = true })
+  vim.keymap.set("i", "<C-q>", '<C-v><Tab>', { noremap = true })
 
   --------- terminal
   vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", { noremap = true, silent = true })
@@ -44,8 +47,7 @@ function custom_mapping()
 
 
   -- Leader系のマッピング設定
-  vim.keymap.set("n", "<Leader>u", ":source /Users/ryota-nakajima/.config/nvim/lua/mapping.lua<CR>",
-    { noremap = true, silent = false }) -- 際読み込み
+  vim.keymap.set("n", "<Leader>u", ":source " .. HOME .. "/.config/nvim/lua/mapping.lua<CR>", { noremap = true, silent = false }) -- 際読み込み
   vim.keymap.set("n", "<Leader>w", "<CMD>w<CR>", { noremap = true, silent = true })
   vim.keymap.set("n", "<Leader>W", "<CMD>wq<CR>", { noremap = true, silent = true })
   vim.keymap.set("n", "<Leader>q", "<CMD>q!<CR>", { noremap = true, silent = true })
@@ -65,8 +67,7 @@ function custom_mapping()
   vim.keymap.set("n", "<C-w>l", ":TmuxNavigateRight<CR>", { noremap = true })
 
   -- visual
-  vim.keymap.set("v", "<Leader>f", 'y<CR><CMD>lua require("origin.visual").target_find_from_files()<CR>',
-    { noremap = true })
+  vim.keymap.set("v", "<Leader>f", 'y<CR><CMD>lua require("origin.visual").target_find_from_files()<CR>', { noremap = true })
   vim.keymap.set("v", "<Leader>F", 'y<CR><CMD>lua require("origin.visual").target_fazy_find()<CR>', { noremap = true })
   vim.keymap.set("v", "<Leader>t", ":Translate<CR>", { noremap = true })
   vim.keymap.set("v", "//", "y/\\V<C-R>=escape(@\",'/\\')<CR><CR>", { noremap = true })
