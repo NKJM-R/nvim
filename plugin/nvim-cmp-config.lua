@@ -28,7 +28,7 @@ local on_attach = function(client, bufnr)
 end
 
 local lspconfig = require('lspconfig')
-lspconfig.lua_ls.setup({})
+
 local lsp_installer = require("mason")
 lsp_installer.setup({
   ui = {
@@ -44,6 +44,15 @@ mason_lspconfig.setup({})
 mason_lspconfig.setup_handlers({ function(server)
   local opts = {}
   opts.on_attach = on_attach
+  opts.settings = {
+    -- python用の設定
+    pylsp = {
+      plugins = {
+        pycodestyle = { maxLineLength = 180 },
+        flake8 = { maxLineLength = 180 },
+      }
+    }
+  }
   lspconfig[server].setup(opts)
 end })
 
