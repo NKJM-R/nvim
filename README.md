@@ -2,7 +2,8 @@
 ```
 git clone https://github.com/NKJM-R/nvim.git && \
 nvim -c JetpackSync -c quit -c quit && \
-sudo apt install -y ripgrep fzf
+sudo apt install -y ripgrep fzf && \
+echo "alias vi='nvim'" >> ~/.bashrc
 ```
 
 # LSP
