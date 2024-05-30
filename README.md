@@ -1,3 +1,8 @@
+# 初回起動
+```
+nvim -c JetpackSync -c quit -c quit
+```
+
 # 参考文献
 
 - ソート系のまとめ: https://qiita.com/rohinomiya/items/f6c175e1f7d529cb15f0
