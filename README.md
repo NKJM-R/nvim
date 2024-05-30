@@ -5,6 +5,9 @@ nvim -c JetpackSync -c quit -c quit && \
 sudo apt install -y ripgrep fzf
 ```
 
+# LSP
+pythonは pylspが良さげ
+
 # 参考文献
 
 - ソート系のまとめ: https://qiita.com/rohinomiya/items/f6c175e1f7d529cb15f0
