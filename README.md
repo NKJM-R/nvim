@@ -1,6 +1,6 @@
 # 初回起動
 ```
-gilcone https://github.com/NKJM-R/nvim.git && \
+git clone https://github.com/NKJM-R/nvim.git && \
 nvim -c JetpackSync -c quit -c quit && \
 sudo apt install -y ripgrep fzf
 ```
