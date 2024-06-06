@@ -16,7 +16,7 @@ mkdir .config && \
 cd .config && \
 git clone https://github.com/NKJM-R/nvim.git && \
 nvim -c JetpackSync -c quit -c quit && \
-sudo apt install -y ripgrep fzf && \
+sudo snap install ripgrep fzf --classic && \
 echo "alias vi='nvim'" >> ~/.bashrc
 ```
 # LSP
