@@ -1,11 +1,24 @@
 # 初回起動
 ```
+cd $HOME && \
+mkdir .config && \
+cd .config && \
 git clone https://github.com/NKJM-R/nvim.git && \
 nvim -c JetpackSync -c quit -c quit && \
 sudo apt install -y ripgrep fzf && \
 echo "alias vi='nvim'" >> ~/.bashrc
 ```
-
+## ubuntu
+```
+sudo snap install nvim --classic
+cd $HOME && \
+mkdir .config && \
+cd .config && \
+git clone https://github.com/NKJM-R/nvim.git && \
+nvim -c JetpackSync -c quit -c quit && \
+sudo apt install -y ripgrep fzf && \
+echo "alias vi='nvim'" >> ~/.bashrc
+```
 # LSP
 pythonは pylspが良さげ
 
