@@ -10,14 +10,14 @@ echo "alias vi='nvim'" >> ~/.bashrc
 ```
 ## ubuntu
 ```
-sudo snap install nvim --classic
+sudo snap install nvim --classic && \
+sudo snap install ripgrep --classic && \
 cd $HOME && \
 mkdir .config && \
 cd .config && \
 git clone https://github.com/NKJM-R/nvim.git && \
 nvim -c JetpackSync -c quit -c quit && \
-sudo snap install ripgrep fzf --classic && \
-echo "alias vi='nvim'" >> ~/.bashrc
+echo "alias vi='nvim'" >> ~/.bashrc && exec $SHELL
 ```
 # LSP
 pythonは pylspが良さげ
